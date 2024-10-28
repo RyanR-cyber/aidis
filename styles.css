@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+}
+
+header {
+    background-color: #003366; /* Darker blue for header */
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a0d1ff; /* Lighter blue on hover */
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.portfolio-item {
+    background-color: #e6f7ff; /* Light blue for portfolio items */
+    border: 1px solid #003366;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-links a {
+    color: #a0d1ff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        width: 90%;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+}
+img {
+    width: 100%; /* scales the image to 100% of its parent */
+    height: auto; /* maintains the aspect ratio */
+}
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
